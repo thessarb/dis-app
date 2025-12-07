@@ -213,7 +213,7 @@ const currentRiskKey = computed(() => {
     const t = result.value.total || 0
     if (t <= 10) return 'low'
     if (t <= 20) return 'moderate'
-    return 'veryhigh'
+    return 'high'
 })
 
 const currentRiskColor = computed(() => {

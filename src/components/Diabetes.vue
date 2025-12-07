@@ -311,29 +311,6 @@ function computeResult() {
     result.value = { total, breakdown, riskLabel, riskMessage }
 }
 
-const riskNotes = computed(() => {
-    return [
-        {
-            key: 'low',
-            label: 'Low risk (0 to 5)',
-            text: 'Approximately one person in every 100 will develop diabetes.',
-            color: '#2ecc71'
-        },
-        {
-            key: 'intermediate',
-            label: 'Intermediate risk (6 to 8)',
-            text: 'Approximately one person in every 50 will develop diabetes.',
-            color: '#f39c12'
-        },
-        {
-            key: 'high',
-            label: 'High risk (9 or more)',
-            text: 'You may be at increased risk of type 2 diabetes. Discuss your score and your individual risk with your doctor. Improving your lifestyle may help reduce your risk of developing type 2 diabetes.',
-            color: '#e74c3c'
-        }
-    ]
-})
-
 const allFilled = computed(() => {
     return (
         form.ageGroup !== '' &&
