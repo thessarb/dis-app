@@ -224,15 +224,13 @@ const currentRiskKey = computed(() => {
     const t = result.value.total || 0
     if (t <= 5) return 'mild'
     if (t <= 12) return 'moderate'
-    if (t <= 18) return 'severe'
-    return 'extreme'
+    return 'severe'
 })
 
 const currentRiskColor = computed(() => {
     const k = currentRiskKey.value
     if (k === 'mild') return '#2ecc71'
     if (k === 'moderate') return '#f39c12'
-    if (k === 'severe') return 'linear-gradient(90deg,#ff4d4d,#dc143c)'
     return 'linear-gradient(90deg,#c4121a,#8b0f12)'
 })
 
